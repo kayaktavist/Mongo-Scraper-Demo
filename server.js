@@ -37,7 +37,10 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/mongoscraperhmwk", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoscraperhmwk";
+
+mongoose.connect(MONGODB_URI);
+// mongoose.connect("mongodb://localhost/mongoscraperhmwk", { useNewUrlParser: true });
 
 // unit18Populater
 // Routes

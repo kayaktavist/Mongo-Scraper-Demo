@@ -1,1 +1,3 @@
 # Mongo-Scraper-Demo
+
+Mongo Scraper WAshington Post edition is a demo full stack app that utilizes express server framework, mongoose for mongo integration, handlebars rendering, morgan, axios, and cherrio for web scraping. The app is designed to allow users to see current headlines scraped from the WP main page, and when it is complete it will allow a user to 'save' articles, updated the scrape, add personal notes to saved articles, and delete saved notes an articles. 
